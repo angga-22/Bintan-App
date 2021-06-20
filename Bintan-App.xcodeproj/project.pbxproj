@@ -58,16 +58,64 @@
 		D44D189F267FB19B005FB689 /* Bintan-App */ = {
 			isa = PBXGroup;
 			children = (
+				D44D18BC267FB22E005FB689 /* Storyboards */,
+				D44D18BB267FB21F005FB689 /* Resources */,
+				D44D18BA267FB21A005FB689 /* Extensions */,
+				D44D18B9267FB214005FB689 /* Controllers */,
+				D44D18B8267FB210005FB689 /* Models */,
+				D44D18B7267FB20A005FB689 /* Views */,
 				D44D18A0267FB19B005FB689 /* AppDelegate.swift */,
 				D44D18A2267FB19B005FB689 /* SceneDelegate.swift */,
 				D44D18A4267FB19B005FB689 /* ViewController.swift */,
-				D44D18A6267FB19B005FB689 /* Main.storyboard */,
 				D44D18AC267FB19C005FB689 /* Assets.xcassets */,
 				D44D18AE267FB19C005FB689 /* LaunchScreen.storyboard */,
 				D44D18B1267FB19C005FB689 /* Info.plist */,
 				D44D18A9267FB19B005FB689 /* Bintan_App.xcdatamodeld */,
 			);
 			path = "Bintan-App";
+			sourceTree = "<group>";
+		};
+		D44D18B7267FB20A005FB689 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D44D18B8267FB210005FB689 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D44D18B9267FB214005FB689 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D44D18BA267FB21A005FB689 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		D44D18BB267FB21F005FB689 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D44D18BC267FB22E005FB689 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D44D18A6267FB19B005FB689 /* Main.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anggasaputra.apple.Bintan-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,7 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anggasaputra.apple.Bintan-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
