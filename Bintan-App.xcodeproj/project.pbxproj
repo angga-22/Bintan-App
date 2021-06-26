@@ -3,29 +3,93 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D400D28A2686E709009B300E /* SelectedAttractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400D2892686E709009B300E /* SelectedAttractionViewController.swift */; };
+		D400D28D26872999009B300E /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400D28C26872999009B300E /* MapScreen.swift */; };
+		D43E7F1B2681BC4000064734 /* AttractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E7F1A2681BC4000064734 /* AttractionViewController.swift */; };
+		D43E7F1D2681BF4200064734 /* AttractionBannerSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E7F1C2681BF4200064734 /* AttractionBannerSlide.swift */; };
+		D43E7F1F2681BFF200064734 /* AttractionBannerSlideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E7F1E2681BFF200064734 /* AttractionBannerSlideCollectionViewCell.swift */; };
 		D44D18A1267FB19B005FB689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D18A0267FB19B005FB689 /* AppDelegate.swift */; };
 		D44D18A3267FB19B005FB689 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D18A2267FB19B005FB689 /* SceneDelegate.swift */; };
-		D44D18A5267FB19B005FB689 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D18A4267FB19B005FB689 /* ViewController.swift */; };
+		D44D18A5267FB19B005FB689 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D18A4267FB19B005FB689 /* OnBoardingViewController.swift */; };
 		D44D18A8267FB19B005FB689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D44D18A6267FB19B005FB689 /* Main.storyboard */; };
 		D44D18AB267FB19B005FB689 /* Bintan_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D44D18A9267FB19B005FB689 /* Bintan_App.xcdatamodeld */; };
 		D44D18AD267FB19C005FB689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44D18AC267FB19C005FB689 /* Assets.xcassets */; };
 		D44D18B0267FB19C005FB689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D44D18AE267FB19C005FB689 /* LaunchScreen.storyboard */; };
+		D457EC552680F9CA00CC48C3 /* OnBoardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D457EC542680F9CA00CC48C3 /* OnBoardingSlide.swift */; };
+		D457EC572680F9FD00CC48C3 /* OnBoardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D457EC562680F9FD00CC48C3 /* OnBoardingCollectionViewCell.swift */; };
+		D457EC592680FC3C00CC48C3 /* UiViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D457EC582680FC3C00CC48C3 /* UiViewExtension.swift */; };
+		D457EC5D26811E8000CC48C3 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D457EC5C26811E8000CC48C3 /* LoadingViewController.swift */; };
+		D457EC5F268121BE00CC48C3 /* LoadingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D457EC5E268121BE00CC48C3 /* LoadingCollectionViewCell.swift */; };
+		D457EC61268121E200CC48C3 /* LoadingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D457EC60268121E200CC48C3 /* LoadingSlide.swift */; };
+		D457EC6326812F1D00CC48C3 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D457EC6226812F1D00CC48C3 /* DashboardViewController.swift */; };
+		D45ABAF12683740800AD6640 /* AttractionCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45ABAF02683740800AD6640 /* AttractionCategoryModel.swift */; };
+		D45ABAF326837DA700AD6640 /* AttractionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45ABAF226837DA700AD6640 /* AttractionTableViewCell.swift */; };
+		D45ABAF526837DC200AD6640 /* AttractionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45ABAF426837DC200AD6640 /* AttractionCollectionViewCell.swift */; };
+		D46A87E92686459800992620 /* AttractionListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46A87E82686459800992620 /* AttractionListTableViewCell.swift */; };
+		D46A87EF26864D1900992620 /* SelectedAttractionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46A87EE26864D1900992620 /* SelectedAttractionTableViewCell.swift */; };
+		D46A87F126864DFE00992620 /* SelectedAttractionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46A87F026864DFE00992620 /* SelectedAttractionCollectionViewCell.swift */; };
+		D48895B32685E9210088C202 /* SelectedAttraction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48895B22685E9210088C202 /* SelectedAttraction.storyboard */; };
+		D488ECD326844D59007BD8DF /* Pods_Bintan_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB8AE64F6D66B95F2B06DAC /* Pods_Bintan_App.framework */; };
+		D49DFA26268276170024B1B5 /* AttractionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49DFA25268276170024B1B5 /* AttractionListViewController.swift */; };
+		D4AD44702683AA80006CDDA6 /* Weather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4AD446F2683AA80006CDDA6 /* Weather.storyboard */; };
+		D4AD44742683B6D7006CDDA6 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AD44732683B6D7006CDDA6 /* WeatherVC.swift */; };
+		D4AD44762683BA78006CDDA6 /* ForecastWeatherListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AD44752683BA78006CDDA6 /* ForecastWeatherListVC.swift */; };
+		D4D89F49268465CF0000CD29 /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D89F48268465CF0000CD29 /* PersistanceManager.swift */; };
+		D4D89F4B268471AF0000CD29 /* Covid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D89F4A268471AF0000CD29 /* Covid.storyboard */; };
+		D4D89F4D268471B70000CD29 /* CovidVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D89F4C268471B70000CD29 /* CovidVC.swift */; };
+		D4D89F4F2684782B0000CD29 /* ItineraryStartPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D89F4E2684782B0000CD29 /* ItineraryStartPage.storyboard */; };
+		D4D89F53268478410000CD29 /* ItineraryTableControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D89F50268478410000CD29 /* ItineraryTableControllers.swift */; };
+		D4D89F55268478410000CD29 /* ItineraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D89F52268478410000CD29 /* ItineraryViewController.swift */; };
+		D4F9654D268309BF003214CF /* attractiondata.json in Resources */ = {isa = PBXBuildFile; fileRef = D4F9654C268309BF003214CF /* attractiondata.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BB8AE64F6D66B95F2B06DAC /* Pods_Bintan_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bintan_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBCEE22362C84785F12E02B0 /* Pods-Bintan-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bintan-App.release.xcconfig"; path = "Target Support Files/Pods-Bintan-App/Pods-Bintan-App.release.xcconfig"; sourceTree = "<group>"; };
+		D400D2892686E709009B300E /* SelectedAttractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedAttractionViewController.swift; sourceTree = "<group>"; };
+		D400D28C26872999009B300E /* MapScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+		D43E7F1A2681BC4000064734 /* AttractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionViewController.swift; sourceTree = "<group>"; };
+		D43E7F1C2681BF4200064734 /* AttractionBannerSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionBannerSlide.swift; sourceTree = "<group>"; };
+		D43E7F1E2681BFF200064734 /* AttractionBannerSlideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionBannerSlideCollectionViewCell.swift; sourceTree = "<group>"; };
 		D44D189D267FB19B005FB689 /* Bintan-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bintan-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44D18A0267FB19B005FB689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D44D18A2267FB19B005FB689 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D44D18A4267FB19B005FB689 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D44D18A4267FB19B005FB689 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		D44D18A7267FB19B005FB689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D44D18AA267FB19B005FB689 /* Bintan_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bintan_App.xcdatamodel; sourceTree = "<group>"; };
 		D44D18AC267FB19C005FB689 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D44D18AF267FB19C005FB689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D44D18B1267FB19C005FB689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D457EC542680F9CA00CC48C3 /* OnBoardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingSlide.swift; sourceTree = "<group>"; };
+		D457EC562680F9FD00CC48C3 /* OnBoardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		D457EC582680FC3C00CC48C3 /* UiViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiViewExtension.swift; sourceTree = "<group>"; };
+		D457EC5C26811E8000CC48C3 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		D457EC5E268121BE00CC48C3 /* LoadingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCollectionViewCell.swift; sourceTree = "<group>"; };
+		D457EC60268121E200CC48C3 /* LoadingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSlide.swift; sourceTree = "<group>"; };
+		D457EC6226812F1D00CC48C3 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		D45ABAF02683740800AD6640 /* AttractionCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionCategoryModel.swift; sourceTree = "<group>"; };
+		D45ABAF226837DA700AD6640 /* AttractionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionTableViewCell.swift; sourceTree = "<group>"; };
+		D45ABAF426837DC200AD6640 /* AttractionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionCollectionViewCell.swift; sourceTree = "<group>"; };
+		D46A87E82686459800992620 /* AttractionListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractionListTableViewCell.swift; sourceTree = "<group>"; };
+		D46A87EE26864D1900992620 /* SelectedAttractionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedAttractionTableViewCell.swift; sourceTree = "<group>"; };
+		D46A87F026864DFE00992620 /* SelectedAttractionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedAttractionCollectionViewCell.swift; sourceTree = "<group>"; };
+		D48895B22685E9210088C202 /* SelectedAttraction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectedAttraction.storyboard; sourceTree = "<group>"; };
+		D49DFA25268276170024B1B5 /* AttractionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionListViewController.swift; sourceTree = "<group>"; };
+		D4AD446F2683AA80006CDDA6 /* Weather.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Weather.storyboard; sourceTree = "<group>"; };
+		D4AD44732683B6D7006CDDA6 /* WeatherVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
+		D4AD44752683BA78006CDDA6 /* ForecastWeatherListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastWeatherListVC.swift; sourceTree = "<group>"; };
+		D4D89F48268465CF0000CD29 /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
+		D4D89F4A268471AF0000CD29 /* Covid.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Covid.storyboard; sourceTree = "<group>"; };
+		D4D89F4C268471B70000CD29 /* CovidVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CovidVC.swift; sourceTree = "<group>"; };
+		D4D89F4E2684782B0000CD29 /* ItineraryStartPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ItineraryStartPage.storyboard; sourceTree = "<group>"; };
+		D4D89F50268478410000CD29 /* ItineraryTableControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItineraryTableControllers.swift; sourceTree = "<group>"; };
+		D4D89F52268478410000CD29 /* ItineraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItineraryViewController.swift; sourceTree = "<group>"; };
+		D4F9654C268309BF003214CF /* attractiondata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = attractiondata.json; path = ../../attractiondata.json; sourceTree = "<group>"; };
+		F4F9F9D1C98315FD4AE0FEEC /* Pods-Bintan-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bintan-App.debug.xcconfig"; path = "Target Support Files/Pods-Bintan-App/Pods-Bintan-App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +97,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D488ECD326844D59007BD8DF /* Pods_Bintan_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4001AFC448730F3A02F30ABF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4F9F9D1C98315FD4AE0FEEC /* Pods-Bintan-App.debug.xcconfig */,
+				BBCEE22362C84785F12E02B0 /* Pods-Bintan-App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7AED2F22DDDE4CCB8D115892 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BB8AE64F6D66B95F2B06DAC /* Pods_Bintan_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D400D28B2687298D009B300E /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				D400D28C26872999009B300E /* MapScreen.swift */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
 		D44D1894267FB19A005FB689 = {
 			isa = PBXGroup;
 			children = (
 				D44D189F267FB19B005FB689 /* Bintan-App */,
 				D44D189E267FB19B005FB689 /* Products */,
+				4001AFC448730F3A02F30ABF /* Pods */,
+				7AED2F22DDDE4CCB8D115892 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +150,8 @@
 		D44D189F267FB19B005FB689 /* Bintan-App */ = {
 			isa = PBXGroup;
 			children = (
+				D4D89F47268465BC0000CD29 /* Persistance */,
+				D4F9654B268309B0003214CF /* JsonData */,
 				D44D18BC267FB22E005FB689 /* Storyboards */,
 				D44D18BB267FB21F005FB689 /* Resources */,
 				D44D18BA267FB21A005FB689 /* Extensions */,
@@ -66,7 +160,6 @@
 				D44D18B7267FB20A005FB689 /* Views */,
 				D44D18A0267FB19B005FB689 /* AppDelegate.swift */,
 				D44D18A2267FB19B005FB689 /* SceneDelegate.swift */,
-				D44D18A4267FB19B005FB689 /* ViewController.swift */,
 				D44D18AC267FB19C005FB689 /* Assets.xcassets */,
 				D44D18AE267FB19C005FB689 /* LaunchScreen.storyboard */,
 				D44D18B1267FB19C005FB689 /* Info.plist */,
@@ -78,6 +171,9 @@
 		D44D18B7267FB20A005FB689 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D45ABAF8268397B700AD6640 /* Attraction */,
+				D457EC562680F9FD00CC48C3 /* OnBoardingCollectionViewCell.swift */,
+				D457EC5E268121BE00CC48C3 /* LoadingCollectionViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -85,6 +181,9 @@
 		D44D18B8267FB210005FB689 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D45ABAF9268397C800AD6640 /* Attraction */,
+				D457EC542680F9CA00CC48C3 /* OnBoardingSlide.swift */,
+				D457EC60268121E200CC48C3 /* LoadingSlide.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -92,6 +191,14 @@
 		D44D18B9267FB214005FB689 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D400D28B2687298D009B300E /* Maps */,
+				D48895A626856C520088C202 /* Weather & Covid */,
+				D45ABAFA268397D600AD6640 /* Attraction */,
+				D4D89F50268478410000CD29 /* ItineraryTableControllers.swift */,
+				D4D89F52268478410000CD29 /* ItineraryViewController.swift */,
+				D44D18A4267FB19B005FB689 /* OnBoardingViewController.swift */,
+				D457EC5C26811E8000CC48C3 /* LoadingViewController.swift */,
+				D457EC6226812F1D00CC48C3 /* DashboardViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -99,6 +206,7 @@
 		D44D18BA267FB21A005FB689 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D457EC582680FC3C00CC48C3 /* UiViewExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -113,9 +221,71 @@
 		D44D18BC267FB22E005FB689 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				D48895B22685E9210088C202 /* SelectedAttraction.storyboard */,
+				D4D89F4E2684782B0000CD29 /* ItineraryStartPage.storyboard */,
 				D44D18A6267FB19B005FB689 /* Main.storyboard */,
+				D4AD446F2683AA80006CDDA6 /* Weather.storyboard */,
+				D4D89F4A268471AF0000CD29 /* Covid.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		D45ABAF8268397B700AD6640 /* Attraction */ = {
+			isa = PBXGroup;
+			children = (
+				D43E7F1E2681BFF200064734 /* AttractionBannerSlideCollectionViewCell.swift */,
+				D45ABAF226837DA700AD6640 /* AttractionTableViewCell.swift */,
+				D45ABAF426837DC200AD6640 /* AttractionCollectionViewCell.swift */,
+				D46A87E82686459800992620 /* AttractionListTableViewCell.swift */,
+				D46A87EE26864D1900992620 /* SelectedAttractionTableViewCell.swift */,
+				D46A87F026864DFE00992620 /* SelectedAttractionCollectionViewCell.swift */,
+			);
+			name = Attraction;
+			sourceTree = "<group>";
+		};
+		D45ABAF9268397C800AD6640 /* Attraction */ = {
+			isa = PBXGroup;
+			children = (
+				D43E7F1C2681BF4200064734 /* AttractionBannerSlide.swift */,
+				D45ABAF02683740800AD6640 /* AttractionCategoryModel.swift */,
+			);
+			name = Attraction;
+			sourceTree = "<group>";
+		};
+		D45ABAFA268397D600AD6640 /* Attraction */ = {
+			isa = PBXGroup;
+			children = (
+				D43E7F1A2681BC4000064734 /* AttractionViewController.swift */,
+				D49DFA25268276170024B1B5 /* AttractionListViewController.swift */,
+				D400D2892686E709009B300E /* SelectedAttractionViewController.swift */,
+			);
+			name = Attraction;
+			sourceTree = "<group>";
+		};
+		D48895A626856C520088C202 /* Weather & Covid */ = {
+			isa = PBXGroup;
+			children = (
+				D4AD44752683BA78006CDDA6 /* ForecastWeatherListVC.swift */,
+				D4D89F4C268471B70000CD29 /* CovidVC.swift */,
+				D4AD44732683B6D7006CDDA6 /* WeatherVC.swift */,
+			);
+			name = "Weather & Covid";
+			sourceTree = "<group>";
+		};
+		D4D89F47268465BC0000CD29 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				D4D89F48268465CF0000CD29 /* PersistanceManager.swift */,
+			);
+			name = Persistance;
+			sourceTree = "<group>";
+		};
+		D4F9654B268309B0003214CF /* JsonData */ = {
+			isa = PBXGroup;
+			children = (
+				D4F9654C268309BF003214CF /* attractiondata.json */,
+			);
+			name = JsonData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +295,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D44D18B4267FB19C005FB689 /* Build configuration list for PBXNativeTarget "Bintan-App" */;
 			buildPhases = (
+				8D2BB205422BC49656FF5533 /* [CP] Check Pods Manifest.lock */,
 				D44D1899267FB19B005FB689 /* Sources */,
 				D44D189A267FB19B005FB689 /* Frameworks */,
 				D44D189B267FB19B005FB689 /* Resources */,
+				5A659CF54AD18AF67A21B8C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,22 +348,94 @@
 			buildActionMask = 2147483647;
 			files = (
 				D44D18B0267FB19C005FB689 /* LaunchScreen.storyboard in Resources */,
+				D48895B32685E9210088C202 /* SelectedAttraction.storyboard in Resources */,
+				D4AD44702683AA80006CDDA6 /* Weather.storyboard in Resources */,
+				D4D89F4B268471AF0000CD29 /* Covid.storyboard in Resources */,
+				D4F9654D268309BF003214CF /* attractiondata.json in Resources */,
 				D44D18AD267FB19C005FB689 /* Assets.xcassets in Resources */,
 				D44D18A8267FB19B005FB689 /* Main.storyboard in Resources */,
+				D4D89F4F2684782B0000CD29 /* ItineraryStartPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A659CF54AD18AF67A21B8C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bintan-App/Pods-Bintan-App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bintan-App/Pods-Bintan-App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bintan-App/Pods-Bintan-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D2BB205422BC49656FF5533 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bintan-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D44D1899267FB19B005FB689 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D44D18A5267FB19B005FB689 /* ViewController.swift in Sources */,
+				D46A87E92686459800992620 /* AttractionListTableViewCell.swift in Sources */,
+				D4AD44762683BA78006CDDA6 /* ForecastWeatherListVC.swift in Sources */,
+				D457EC61268121E200CC48C3 /* LoadingSlide.swift in Sources */,
+				D4AD44742683B6D7006CDDA6 /* WeatherVC.swift in Sources */,
+				D44D18A5267FB19B005FB689 /* OnBoardingViewController.swift in Sources */,
+				D49DFA26268276170024B1B5 /* AttractionListViewController.swift in Sources */,
+				D46A87F126864DFE00992620 /* SelectedAttractionCollectionViewCell.swift in Sources */,
+				D457EC592680FC3C00CC48C3 /* UiViewExtension.swift in Sources */,
 				D44D18A1267FB19B005FB689 /* AppDelegate.swift in Sources */,
+				D457EC5D26811E8000CC48C3 /* LoadingViewController.swift in Sources */,
+				D400D28D26872999009B300E /* MapScreen.swift in Sources */,
+				D400D28A2686E709009B300E /* SelectedAttractionViewController.swift in Sources */,
+				D43E7F1B2681BC4000064734 /* AttractionViewController.swift in Sources */,
 				D44D18A3267FB19B005FB689 /* SceneDelegate.swift in Sources */,
+				D4D89F49268465CF0000CD29 /* PersistanceManager.swift in Sources */,
+				D457EC572680F9FD00CC48C3 /* OnBoardingCollectionViewCell.swift in Sources */,
+				D46A87EF26864D1900992620 /* SelectedAttractionTableViewCell.swift in Sources */,
+				D4D89F55268478410000CD29 /* ItineraryViewController.swift in Sources */,
 				D44D18AB267FB19B005FB689 /* Bintan_App.xcdatamodeld in Sources */,
+				D45ABAF326837DA700AD6640 /* AttractionTableViewCell.swift in Sources */,
+				D45ABAF12683740800AD6640 /* AttractionCategoryModel.swift in Sources */,
+				D4D89F53268478410000CD29 /* ItineraryTableControllers.swift in Sources */,
+				D457EC6326812F1D00CC48C3 /* DashboardViewController.swift in Sources */,
+				D457EC5F268121BE00CC48C3 /* LoadingCollectionViewCell.swift in Sources */,
+				D43E7F1D2681BF4200064734 /* AttractionBannerSlide.swift in Sources */,
+				D457EC552680F9CA00CC48C3 /* OnBoardingSlide.swift in Sources */,
+				D4D89F4D268471B70000CD29 /* CovidVC.swift in Sources */,
+				D43E7F1F2681BFF200064734 /* AttractionBannerSlideCollectionViewCell.swift in Sources */,
+				D45ABAF526837DC200AD6640 /* AttractionCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,12 +579,14 @@
 		};
 		D44D18B5267FB19C005FB689 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4F9F9D1C98315FD4AE0FEEC /* Pods-Bintan-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 869BSQC2PD;
 				INFOPLIST_FILE = "Bintan-App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,12 +600,14 @@
 		};
 		D44D18B6267FB19C005FB689 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBCEE22362C84785F12E02B0 /* Pods-Bintan-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 869BSQC2PD;
 				INFOPLIST_FILE = "Bintan-App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
