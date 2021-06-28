@@ -21,11 +21,12 @@ class customPin: NSObject, MKAnnotation {
         self.coordinate = location
     }
 }
+
+
 class MapScreen: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
 
-    @IBOutlet weak var goButton: UIButton!
     
     let locationManager = CLLocationManager()
     let regionInMeters: Double = 10000
@@ -34,16 +35,18 @@ class MapScreen: UIViewController {
     let geoCoder = CLGeocoder()
     var directionsArray: [MKDirections] = []
     
+    var selectedAttractionTitle: AttractionDetails?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        goButton.layer.cornerRadius = goButton.frame.size.height/2
         checkLocationServices()
+        getDirections()
+        navigationItem.title = selectedAttractionTitle?.name
         // custom pin
-        let destinationLocation = CLLocationCoordinate2D(latitude:1.1803809923201645 , longitude: 104.37293624851948)
-        let destinationPin = customPin(pinTitle: "Lagoi Bay", pinSubTitle: "", location: destinationLocation)
+        let destinationLocation = CLLocationCoordinate2D(latitude:    0.9740201930203404, longitude:   104.61247070743715 )
+        let destinationPin = customPin(pinTitle: "Blue Lake Kijang", pinSubTitle: "", location: destinationLocation)
         self.mapView.addAnnotation(destinationPin)
-        let destinationPlaceMark = MKPlacemark(coordinate: destinationLocation)
+//        let destinationPlaceMark = MKPlacemark(coordinate: destinationLocation)
     }
     
     
@@ -95,13 +98,13 @@ class MapScreen: UIViewController {
         mapView.showsUserLocation = true
         centerViewOnUserLocation()
         locationManager.startUpdatingLocation()
-        previousLocation = getLocation(for: mapView)
+        previousLocation = getCenterLocation(for: mapView)
     }
     
-    
-    func getLocation(for mapView: MKMapView) -> CLLocation {
-        let latitude = 1.1803809923201645
-        let longitude = 104.37293624851948
+   
+    func getCenterLocation(for mapView: MKMapView) -> CLLocation {
+        let latitude =  mapView.centerCoordinate.latitude
+        let longitude =  mapView.centerCoordinate.longitude
         
         return CLLocation(latitude: latitude, longitude: longitude)
     }
@@ -115,7 +118,7 @@ class MapScreen: UIViewController {
         
         let request = createDirectionsRequest(from: location)
         let directions = MKDirections(request: request)
-        resetMapView(withNew: directions)
+//        resetMapView(withNew: directions)
         
         directions.calculate { [unowned self] (response, error) in
             //TODO: Handle error if needed
@@ -126,11 +129,12 @@ class MapScreen: UIViewController {
                 self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
             }
         }
+
     }
     
     
     func createDirectionsRequest(from coordinate: CLLocationCoordinate2D) -> MKDirections.Request {
-        let destinationCoordinate       = getLocation(for: mapView).coordinate
+        let destinationCoordinate       = getCenterLocation(for: mapView).coordinate
         let startingLocation            = MKPlacemark(coordinate: coordinate)
         let destination                 = MKPlacemark(coordinate: destinationCoordinate)
         
@@ -144,16 +148,17 @@ class MapScreen: UIViewController {
     }
     
     
-    func resetMapView(withNew directions: MKDirections) {
-        mapView.removeOverlays(mapView.overlays)
-        directionsArray.append(directions)
-        let _ = directionsArray.map { $0.cancel() }
-    }
+//    func resetMapView(withNew directions: MKDirections) {
+//        mapView.removeOverlays(mapView.overlays)
+//        directionsArray.append(directions)
+//        let _ = directionsArray.map { $0.cancel() }
+//    }
+//
     
-    
-    @IBAction func goButtonTapped(_ sender: UIButton) {
+/*@IBAction func goButtonTapped(_ sender: UIButton) {
         getDirections()
     }
+ */
 }
 
 
@@ -168,7 +173,7 @@ extension MapScreen: CLLocationManagerDelegate {
 extension MapScreen: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
-        let center = getLocation(for: mapView)
+        let center = getCenterLocation(for: mapView)
         
         guard let previousLocation = self.previousLocation else { return }
         
@@ -178,32 +183,32 @@ extension MapScreen: MKMapViewDelegate {
         geoCoder.cancelGeocode()
         
         geoCoder.reverseGeocodeLocation(center) { [weak self] (placemarks, error) in
-            guard let self = self else { return }
+            guard self != nil else { return }
             
             if let _ = error {
                 //TODO: Show alert informing the user
                 return
             }
             
-            guard let placemark = placemarks?.first else {
+            guard (placemarks?.first) != nil else {
                 //TODO: Show alert informing the user
                 return
             }
             
-            let streetNumber = placemark.subThoroughfare ?? ""
-            let streetName = placemark.thoroughfare ?? ""
-            
+//            let streetNumber = placemark.subThoroughfare ?? ""
+//            let streetName = placemark.thoroughfare ?? ""
+//
 //            DispatchQueue.main.async {
 //                self.addressLabel.text = "\(streetNumber) \(streetName)"
 //            }
         }
     }
     
-    
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer = MKPolylineRenderer(overlay: overlay as! MKPolyline)
         renderer.strokeColor = .blue
-        
+        renderer.lineWidth = 2
         return renderer
     }
+
 }

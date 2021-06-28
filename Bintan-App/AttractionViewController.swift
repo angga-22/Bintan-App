@@ -86,7 +86,7 @@ extension AttractionViewController: UICollectionViewDelegate, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Self.identifierBanner, for: indexPath) as? AttractionBannerSlideCollectionViewCell else { return UICollectionViewCell() }
         let banner = dataAttractionSlide[indexPath.row]
-        cell.configure(image: banner.image)
+        cell.configure(name: banner.name, image: banner.image)
         cell.currentPageSlide = dataAttractionSlide.count - 1
         return cell
     }

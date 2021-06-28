@@ -11,7 +11,7 @@ class ForecastWeatherListVC: UIViewController {
     
     let data = [
     
-        "a","b","c","d","Heavy Rain"
+        "25.8º","27º","26º","26.2º","28.4º", "29º", "28.3º"
     ]
 
     @IBOutlet weak var forecastWeatherTabelView: UITableView!
@@ -42,10 +42,9 @@ extension ForecastWeatherListVC: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "forecastCell", for: indexPath)
         
         cell.textLabel?.text = data[indexPath.row]
-        
-        cell.contentView.largeContentImage = UIImage(systemName: "cloud.drizzle.fill")
-        
-        return cell
+
+        cell.contentView.largeContentImage = UIImage(systemName: "cloud.fill")
+       return cell
         
     }
 }

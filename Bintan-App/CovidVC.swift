@@ -22,6 +22,7 @@ class CovidVC: UIViewController {
     @IBOutlet weak var informationContainerLeft: UIView!
     @IBOutlet weak var informationContainerCenter: UIView!
     @IBOutlet weak var informationContainerRight: UIView!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     @IBOutlet weak var lineChartView: LineChartView!
     
@@ -56,7 +57,8 @@ class CovidVC: UIViewController {
         // MARK: Date Label Update
         
         dateLabel.text = currentDate.formatString
-        
+        spinner.startAnimating()
+        spinner.hidesWhenStopped = true
         // MARK: Changing The Information Container Attributes
         changeAttribute([informationContainerLeft,informationContainerCenter,informationContainerRight])
         
@@ -70,7 +72,7 @@ class CovidVC: UIViewController {
         lineChartView.centerInSuperview()
         lineChartView.width(350)
         lineChartView.height(300)
-        lineChartView.noDataText = "Data is loading"
+//        lineChartView.noDataText = "Data is loading"
         
         // Setup The axis
         lineChartView.rightAxis.enabled = false
@@ -158,7 +160,7 @@ class CovidVC: UIViewController {
                     iteration += 7
 
                 }
-                
+                spinner.stopAnimating()
                 totalCases.text = covidJSON[covidJSON.count-1]["jumlah_kasus_konfirmasi"].stringValue
                 recoveredCases.text = covidJSON[covidJSON.count-1]["jumlah_kasus_konfirmasi_sembuh"].stringValue
                 

@@ -136,6 +136,14 @@
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="igW-a0-drb" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="40" y="272" width="310" height="300"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Tnn-zi-MTN">
+                                        <rect key="frame" x="-38" y="-275" width="387" height="850"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <color key="color" name="PrimaryColor"/>
+                                    </activityIndicatorView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="F60-OJ-cj4"/>
@@ -164,6 +172,7 @@
                         <outlet property="informationContainerRight" destination="s9K-04-lYy" id="XeV-jF-NPQ"/>
                         <outlet property="lineChartView" destination="igW-a0-drb" id="muB-Z5-fa3"/>
                         <outlet property="recoveredCases" destination="fb2-Py-rda" id="apd-rg-Btb"/>
+                        <outlet property="spinner" destination="Tnn-zi-MTN" id="RID-8P-Neg"/>
                         <outlet property="totalCases" destination="Dy6-Xn-dkr" id="duo-2j-BuT"/>
                     </connections>
                 </viewController>
@@ -181,6 +190,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

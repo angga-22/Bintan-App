@@ -12,12 +12,15 @@ class AttractionListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var attractionList : Attraction?
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = attractionList?.attractionCategory
         tableView.dataSource = self
         tableView.delegate = self
         tableView.reloadData()
+     
+
     }
     
 

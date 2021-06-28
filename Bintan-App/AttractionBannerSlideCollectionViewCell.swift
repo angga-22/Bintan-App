@@ -9,7 +9,8 @@ import UIKit
 
 class AttractionBannerSlideCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var bannerSlide: UIImageView!
-
+    @IBOutlet weak var bannerName: UILabel!
+    
     
     var dataAttractionSlide = AttractionBannerSlide.dataAttractionBanner
     
@@ -20,7 +21,8 @@ class AttractionBannerSlideCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    func configure(image: UIImage){
+    func configure(name: String, image: UIImage){
+        bannerName.text = name
         bannerSlide.image = image
     }
     

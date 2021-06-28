@@ -15,11 +15,17 @@ class AttractionListTableViewCell: UITableViewCell {
     @IBOutlet weak var openHoursAttractionDetail: UILabel!
     @IBOutlet weak var descriptionAttractionDetail: UILabel!
     
+    @IBOutlet weak var uiView: UIView!
     var latlongAgain = [Double]()
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        uiView.layer.shadowColor = UIColor.black.cgColor
+       uiView.layer.shadowOpacity = 2
+//       uiView.layer.shadowOffset = .zero
+        uiView.layer.shadowRadius = 1
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

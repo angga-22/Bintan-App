@@ -15,7 +15,7 @@ class LoadingViewController: UIViewController {
     var loadingSlide = LoadingSlide.dataLoading
     private var autoScrollTimer: Timer?
     private var currentCellIndex: Int = 0
-    private var progress = Progress(totalUnitCount: 1)
+    private var progress = Progress(totalUnitCount: 10)
     
     
     override func viewDidLoad() {

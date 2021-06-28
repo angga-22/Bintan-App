@@ -27,9 +27,15 @@ class ItineraryViewController: UIViewController, MKMapViewDelegate, FloatingPane
         callFloatingPanel()
     }
     
+    @IBAction func addItinerary(_ sender: Any) {
+        
+        performSegue(withIdentifier: "goToUserPreferences", sender: self)
+    }
+    
+    
     func callFloatingPanel (){
         let floatingPanel = FloatingPanelController()
-        guard let itineraryTableVC = storyboard?.instantiateViewController(identifier: "fpc_itineraryStartPage") as? ItineraryTableControllers else {
+        guard let itineraryTableVC = storyboard?.instantiateViewController(identifier: "fpc_itineraryStartPage") as? ItineraryFPViewController else {
             return
         }
         floatingPanel.delegate = self
@@ -37,6 +43,8 @@ class ItineraryViewController: UIViewController, MKMapViewDelegate, FloatingPane
         floatingPanel.addPanel(toParent: self)
     }
     
+    
+   
     func setupLocationManager(){
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -92,8 +100,6 @@ extension ItineraryViewController: CLLocationManagerDelegate {
     }
         private func locationManager(_ manager: CLLocationManager, didChangeAuthorization: [CLAuthorizationStatus]){
     }
-
-        
 }
 
         

@@ -24,9 +24,8 @@ class SelectedAttractionTableViewCell: UITableViewCell {
         // Initialization cod
         latlong.text = "\(latlongAgainAgain)"
         uiView.layer.shadowColor = UIColor.black.cgColor
-        uiView.layer.shadowOpacity = 1
+        uiView.layer.shadowOpacity = 2
         uiView.layer.shadowRadius = 1
-        uiView.layer.shadowOffset = .zero
         descriptionSelectedAttraction.text = .some("....")
     }
 

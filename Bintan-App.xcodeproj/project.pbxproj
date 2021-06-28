@@ -12,6 +12,9 @@
 		D43E7F1B2681BC4000064734 /* AttractionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E7F1A2681BC4000064734 /* AttractionViewController.swift */; };
 		D43E7F1D2681BF4200064734 /* AttractionBannerSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E7F1C2681BF4200064734 /* AttractionBannerSlide.swift */; };
 		D43E7F1F2681BFF200064734 /* AttractionBannerSlideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43E7F1E2681BFF200064734 /* AttractionBannerSlideCollectionViewCell.swift */; };
+		D442C10826897FE400ABC4E1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D442C10726897FE400ABC4E1 /* MapKit.framework */; };
+		D442C10A2689903C00ABC4E1 /* StartingPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442C1092689903C00ABC4E1 /* StartingPointViewController.swift */; };
+		D442C10C2689905200ABC4E1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D442C10B2689905200ABC4E1 /* LocationManager.swift */; };
 		D44D18A1267FB19B005FB689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D18A0267FB19B005FB689 /* AppDelegate.swift */; };
 		D44D18A3267FB19B005FB689 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D18A2267FB19B005FB689 /* SceneDelegate.swift */; };
 		D44D18A5267FB19B005FB689 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44D18A4267FB19B005FB689 /* OnBoardingViewController.swift */; };
@@ -29,6 +32,7 @@
 		D45ABAF12683740800AD6640 /* AttractionCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45ABAF02683740800AD6640 /* AttractionCategoryModel.swift */; };
 		D45ABAF326837DA700AD6640 /* AttractionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45ABAF226837DA700AD6640 /* AttractionTableViewCell.swift */; };
 		D45ABAF526837DC200AD6640 /* AttractionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45ABAF426837DC200AD6640 /* AttractionCollectionViewCell.swift */; };
+		D464620E268890230007A85A /* ItineraryMapGeneratedFPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D464620D268890230007A85A /* ItineraryMapGeneratedFPViewController.swift */; };
 		D46A87E92686459800992620 /* AttractionListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46A87E82686459800992620 /* AttractionListTableViewCell.swift */; };
 		D46A87EF26864D1900992620 /* SelectedAttractionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46A87EE26864D1900992620 /* SelectedAttractionTableViewCell.swift */; };
 		D46A87F126864DFE00992620 /* SelectedAttractionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46A87F026864DFE00992620 /* SelectedAttractionCollectionViewCell.swift */; };
@@ -42,8 +46,20 @@
 		D4D89F4B268471AF0000CD29 /* Covid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D89F4A268471AF0000CD29 /* Covid.storyboard */; };
 		D4D89F4D268471B70000CD29 /* CovidVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D89F4C268471B70000CD29 /* CovidVC.swift */; };
 		D4D89F4F2684782B0000CD29 /* ItineraryStartPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D89F4E2684782B0000CD29 /* ItineraryStartPage.storyboard */; };
-		D4D89F53268478410000CD29 /* ItineraryTableControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D89F50268478410000CD29 /* ItineraryTableControllers.swift */; };
+		D4D89F53268478410000CD29 /* ItineraryFPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D89F50268478410000CD29 /* ItineraryFPViewController.swift */; };
 		D4D89F55268478410000CD29 /* ItineraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D89F52268478410000CD29 /* ItineraryViewController.swift */; };
+		D4EB12FA2688ABCF003FB5A6 /* ShadowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EB12F92688ABCF003FB5A6 /* ShadowExtension.swift */; };
+		D4EB12FE2688B9D2003FB5A6 /* MainFeatureDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EB12FD2688B9D2003FB5A6 /* MainFeatureDataModel.swift */; };
+		D4EB13002688BD8E003FB5A6 /* StartingPointTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EB12FF2688BD8E003FB5A6 /* StartingPointTableViewCell.swift */; };
+		D4F2E2122687881E00F3FB82 /* UserPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F2E2112687881E00F3FB82 /* UserPreferencesViewController.swift */; };
+		D4F2E2142687898400F3FB82 /* ItineraryMapGeneratedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F2E2132687898400F3FB82 /* ItineraryMapGeneratedViewController.swift */; };
+		D4F2E21726878B0900F3FB82 /* NameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F2E21626878B0900F3FB82 /* NameTableViewCell.swift */; };
+		D4F2E21926878B3100F3FB82 /* TravellerTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F2E21826878B3100F3FB82 /* TravellerTypeTableViewCell.swift */; };
+		D4F2E21B26878B3F00F3FB82 /* ItineraryMapGeneratedFPTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F2E21A26878B3F00F3FB82 /* ItineraryMapGeneratedFPTableViewCell.swift */; };
+		D4F2E21D26878B4C00F3FB82 /* DurationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F2E21C26878B4C00F3FB82 /* DurationTableViewCell.swift */; };
+		D4F2E22326878B8500F3FB82 /* StartTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F2E22226878B8500F3FB82 /* StartTimeTableViewCell.swift */; };
+		D4F2E22526878B9100F3FB82 /* EndTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F2E22426878B9100F3FB82 /* EndTimeTableViewCell.swift */; };
+		D4F2E2282687B3CF00F3FB82 /* InputNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F2E2272687B3CF00F3FB82 /* InputNameViewController.swift */; };
 		D4F9654D268309BF003214CF /* attractiondata.json in Resources */ = {isa = PBXBuildFile; fileRef = D4F9654C268309BF003214CF /* attractiondata.json */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +71,9 @@
 		D43E7F1A2681BC4000064734 /* AttractionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionViewController.swift; sourceTree = "<group>"; };
 		D43E7F1C2681BF4200064734 /* AttractionBannerSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionBannerSlide.swift; sourceTree = "<group>"; };
 		D43E7F1E2681BFF200064734 /* AttractionBannerSlideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionBannerSlideCollectionViewCell.swift; sourceTree = "<group>"; };
+		D442C10726897FE400ABC4E1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D442C1092689903C00ABC4E1 /* StartingPointViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartingPointViewController.swift; sourceTree = "<group>"; };
+		D442C10B2689905200ABC4E1 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		D44D189D267FB19B005FB689 /* Bintan-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bintan-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44D18A0267FB19B005FB689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D44D18A2267FB19B005FB689 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +93,7 @@
 		D45ABAF02683740800AD6640 /* AttractionCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionCategoryModel.swift; sourceTree = "<group>"; };
 		D45ABAF226837DA700AD6640 /* AttractionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionTableViewCell.swift; sourceTree = "<group>"; };
 		D45ABAF426837DC200AD6640 /* AttractionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionCollectionViewCell.swift; sourceTree = "<group>"; };
+		D464620D268890230007A85A /* ItineraryMapGeneratedFPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryMapGeneratedFPViewController.swift; sourceTree = "<group>"; };
 		D46A87E82686459800992620 /* AttractionListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractionListTableViewCell.swift; sourceTree = "<group>"; };
 		D46A87EE26864D1900992620 /* SelectedAttractionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedAttractionTableViewCell.swift; sourceTree = "<group>"; };
 		D46A87F026864DFE00992620 /* SelectedAttractionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedAttractionCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -86,8 +106,20 @@
 		D4D89F4A268471AF0000CD29 /* Covid.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Covid.storyboard; sourceTree = "<group>"; };
 		D4D89F4C268471B70000CD29 /* CovidVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CovidVC.swift; sourceTree = "<group>"; };
 		D4D89F4E2684782B0000CD29 /* ItineraryStartPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ItineraryStartPage.storyboard; sourceTree = "<group>"; };
-		D4D89F50268478410000CD29 /* ItineraryTableControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItineraryTableControllers.swift; sourceTree = "<group>"; };
+		D4D89F50268478410000CD29 /* ItineraryFPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItineraryFPViewController.swift; sourceTree = "<group>"; };
 		D4D89F52268478410000CD29 /* ItineraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItineraryViewController.swift; sourceTree = "<group>"; };
+		D4EB12F92688ABCF003FB5A6 /* ShadowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowExtension.swift; sourceTree = "<group>"; };
+		D4EB12FD2688B9D2003FB5A6 /* MainFeatureDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeatureDataModel.swift; sourceTree = "<group>"; };
+		D4EB12FF2688BD8E003FB5A6 /* StartingPointTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingPointTableViewCell.swift; sourceTree = "<group>"; };
+		D4F2E2112687881E00F3FB82 /* UserPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesViewController.swift; sourceTree = "<group>"; };
+		D4F2E2132687898400F3FB82 /* ItineraryMapGeneratedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryMapGeneratedViewController.swift; sourceTree = "<group>"; };
+		D4F2E21626878B0900F3FB82 /* NameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTableViewCell.swift; sourceTree = "<group>"; };
+		D4F2E21826878B3100F3FB82 /* TravellerTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravellerTypeTableViewCell.swift; sourceTree = "<group>"; };
+		D4F2E21A26878B3F00F3FB82 /* ItineraryMapGeneratedFPTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryMapGeneratedFPTableViewCell.swift; sourceTree = "<group>"; };
+		D4F2E21C26878B4C00F3FB82 /* DurationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationTableViewCell.swift; sourceTree = "<group>"; };
+		D4F2E22226878B8500F3FB82 /* StartTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTimeTableViewCell.swift; sourceTree = "<group>"; };
+		D4F2E22426878B9100F3FB82 /* EndTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndTimeTableViewCell.swift; sourceTree = "<group>"; };
+		D4F2E2272687B3CF00F3FB82 /* InputNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameViewController.swift; sourceTree = "<group>"; };
 		D4F9654C268309BF003214CF /* attractiondata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = attractiondata.json; path = ../../attractiondata.json; sourceTree = "<group>"; };
 		F4F9F9D1C98315FD4AE0FEEC /* Pods-Bintan-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bintan-App.debug.xcconfig"; path = "Target Support Files/Pods-Bintan-App/Pods-Bintan-App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D442C10826897FE400ABC4E1 /* MapKit.framework in Frameworks */,
 				D488ECD326844D59007BD8DF /* Pods_Bintan_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +149,7 @@
 		7AED2F22DDDE4CCB8D115892 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D442C10726897FE400ABC4E1 /* MapKit.framework */,
 				3BB8AE64F6D66B95F2B06DAC /* Pods_Bintan_App.framework */,
 			);
 			name = Frameworks;
@@ -124,7 +158,6 @@
 		D400D28B2687298D009B300E /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				D400D28C26872999009B300E /* MapScreen.swift */,
 			);
 			name = Maps;
 			sourceTree = "<group>";
@@ -171,6 +204,8 @@
 		D44D18B7267FB20A005FB689 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D4EB12FB2688B7CE003FB5A6 /* MainFeature */,
+				D4F2E21526878AEB00F3FB82 /* UserPreferences */,
 				D45ABAF8268397B700AD6640 /* Attraction */,
 				D457EC562680F9FD00CC48C3 /* OnBoardingCollectionViewCell.swift */,
 				D457EC5E268121BE00CC48C3 /* LoadingCollectionViewCell.swift */,
@@ -181,6 +216,7 @@
 		D44D18B8267FB210005FB689 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D4EB12FC2688B999003FB5A6 /* MainFeature */,
 				D45ABAF9268397C800AD6640 /* Attraction */,
 				D457EC542680F9CA00CC48C3 /* OnBoardingSlide.swift */,
 				D457EC60268121E200CC48C3 /* LoadingSlide.swift */,
@@ -191,11 +227,10 @@
 		D44D18B9267FB214005FB689 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D4F2E2262687B38100F3FB82 /* MainFeature */,
 				D400D28B2687298D009B300E /* Maps */,
 				D48895A626856C520088C202 /* Weather & Covid */,
 				D45ABAFA268397D600AD6640 /* Attraction */,
-				D4D89F50268478410000CD29 /* ItineraryTableControllers.swift */,
-				D4D89F52268478410000CD29 /* ItineraryViewController.swift */,
 				D44D18A4267FB19B005FB689 /* OnBoardingViewController.swift */,
 				D457EC5C26811E8000CC48C3 /* LoadingViewController.swift */,
 				D457EC6226812F1D00CC48C3 /* DashboardViewController.swift */,
@@ -207,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				D457EC582680FC3C00CC48C3 /* UiViewExtension.swift */,
+				D4EB12F92688ABCF003FB5A6 /* ShadowExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -258,6 +294,7 @@
 				D43E7F1A2681BC4000064734 /* AttractionViewController.swift */,
 				D49DFA25268276170024B1B5 /* AttractionListViewController.swift */,
 				D400D2892686E709009B300E /* SelectedAttractionViewController.swift */,
+				D400D28C26872999009B300E /* MapScreen.swift */,
 			);
 			name = Attraction;
 			sourceTree = "<group>";
@@ -278,6 +315,50 @@
 				D4D89F48268465CF0000CD29 /* PersistanceManager.swift */,
 			);
 			name = Persistance;
+			sourceTree = "<group>";
+		};
+		D4EB12FB2688B7CE003FB5A6 /* MainFeature */ = {
+			isa = PBXGroup;
+			children = (
+				D4F2E21A26878B3F00F3FB82 /* ItineraryMapGeneratedFPTableViewCell.swift */,
+				D4EB12FF2688BD8E003FB5A6 /* StartingPointTableViewCell.swift */,
+			);
+			name = MainFeature;
+			sourceTree = "<group>";
+		};
+		D4EB12FC2688B999003FB5A6 /* MainFeature */ = {
+			isa = PBXGroup;
+			children = (
+				D442C10B2689905200ABC4E1 /* LocationManager.swift */,
+				D4EB12FD2688B9D2003FB5A6 /* MainFeatureDataModel.swift */,
+			);
+			path = MainFeature;
+			sourceTree = "<group>";
+		};
+		D4F2E21526878AEB00F3FB82 /* UserPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				D4F2E21626878B0900F3FB82 /* NameTableViewCell.swift */,
+				D4F2E21826878B3100F3FB82 /* TravellerTypeTableViewCell.swift */,
+				D4F2E21C26878B4C00F3FB82 /* DurationTableViewCell.swift */,
+				D4F2E22226878B8500F3FB82 /* StartTimeTableViewCell.swift */,
+				D4F2E22426878B9100F3FB82 /* EndTimeTableViewCell.swift */,
+			);
+			name = UserPreferences;
+			sourceTree = "<group>";
+		};
+		D4F2E2262687B38100F3FB82 /* MainFeature */ = {
+			isa = PBXGroup;
+			children = (
+				D4D89F52268478410000CD29 /* ItineraryViewController.swift */,
+				D4D89F50268478410000CD29 /* ItineraryFPViewController.swift */,
+				D4F2E2112687881E00F3FB82 /* UserPreferencesViewController.swift */,
+				D4F2E2272687B3CF00F3FB82 /* InputNameViewController.swift */,
+				D4F2E2132687898400F3FB82 /* ItineraryMapGeneratedViewController.swift */,
+				D464620D268890230007A85A /* ItineraryMapGeneratedFPViewController.swift */,
+				D442C1092689903C00ABC4E1 /* StartingPointViewController.swift */,
+			);
+			name = MainFeature;
 			sourceTree = "<group>";
 		};
 		D4F9654B268309B0003214CF /* JsonData */ = {
@@ -411,28 +492,43 @@
 				D4AD44762683BA78006CDDA6 /* ForecastWeatherListVC.swift in Sources */,
 				D457EC61268121E200CC48C3 /* LoadingSlide.swift in Sources */,
 				D4AD44742683B6D7006CDDA6 /* WeatherVC.swift in Sources */,
+				D4EB12FA2688ABCF003FB5A6 /* ShadowExtension.swift in Sources */,
 				D44D18A5267FB19B005FB689 /* OnBoardingViewController.swift in Sources */,
 				D49DFA26268276170024B1B5 /* AttractionListViewController.swift in Sources */,
+				D4F2E2122687881E00F3FB82 /* UserPreferencesViewController.swift in Sources */,
 				D46A87F126864DFE00992620 /* SelectedAttractionCollectionViewCell.swift in Sources */,
 				D457EC592680FC3C00CC48C3 /* UiViewExtension.swift in Sources */,
 				D44D18A1267FB19B005FB689 /* AppDelegate.swift in Sources */,
 				D457EC5D26811E8000CC48C3 /* LoadingViewController.swift in Sources */,
 				D400D28D26872999009B300E /* MapScreen.swift in Sources */,
+				D4F2E2282687B3CF00F3FB82 /* InputNameViewController.swift in Sources */,
 				D400D28A2686E709009B300E /* SelectedAttractionViewController.swift in Sources */,
 				D43E7F1B2681BC4000064734 /* AttractionViewController.swift in Sources */,
 				D44D18A3267FB19B005FB689 /* SceneDelegate.swift in Sources */,
+				D442C10C2689905200ABC4E1 /* LocationManager.swift in Sources */,
 				D4D89F49268465CF0000CD29 /* PersistanceManager.swift in Sources */,
+				D4EB13002688BD8E003FB5A6 /* StartingPointTableViewCell.swift in Sources */,
 				D457EC572680F9FD00CC48C3 /* OnBoardingCollectionViewCell.swift in Sources */,
+				D4F2E21926878B3100F3FB82 /* TravellerTypeTableViewCell.swift in Sources */,
 				D46A87EF26864D1900992620 /* SelectedAttractionTableViewCell.swift in Sources */,
 				D4D89F55268478410000CD29 /* ItineraryViewController.swift in Sources */,
+				D4F2E21B26878B3F00F3FB82 /* ItineraryMapGeneratedFPTableViewCell.swift in Sources */,
 				D44D18AB267FB19B005FB689 /* Bintan_App.xcdatamodeld in Sources */,
+				D464620E268890230007A85A /* ItineraryMapGeneratedFPViewController.swift in Sources */,
 				D45ABAF326837DA700AD6640 /* AttractionTableViewCell.swift in Sources */,
+				D4F2E2142687898400F3FB82 /* ItineraryMapGeneratedViewController.swift in Sources */,
+				D4F2E22326878B8500F3FB82 /* StartTimeTableViewCell.swift in Sources */,
+				D4F2E21726878B0900F3FB82 /* NameTableViewCell.swift in Sources */,
 				D45ABAF12683740800AD6640 /* AttractionCategoryModel.swift in Sources */,
-				D4D89F53268478410000CD29 /* ItineraryTableControllers.swift in Sources */,
+				D4D89F53268478410000CD29 /* ItineraryFPViewController.swift in Sources */,
+				D4F2E21D26878B4C00F3FB82 /* DurationTableViewCell.swift in Sources */,
 				D457EC6326812F1D00CC48C3 /* DashboardViewController.swift in Sources */,
+				D442C10A2689903C00ABC4E1 /* StartingPointViewController.swift in Sources */,
 				D457EC5F268121BE00CC48C3 /* LoadingCollectionViewCell.swift in Sources */,
+				D4F2E22526878B9100F3FB82 /* EndTimeTableViewCell.swift in Sources */,
 				D43E7F1D2681BF4200064734 /* AttractionBannerSlide.swift in Sources */,
 				D457EC552680F9CA00CC48C3 /* OnBoardingSlide.swift in Sources */,
+				D4EB12FE2688B9D2003FB5A6 /* MainFeatureDataModel.swift in Sources */,
 				D4D89F4D268471B70000CD29 /* CovidVC.swift in Sources */,
 				D43E7F1F2681BFF200064734 /* AttractionBannerSlideCollectionViewCell.swift in Sources */,
 				D45ABAF526837DC200AD6640 /* AttractionCollectionViewCell.swift in Sources */,
