@@ -16,7 +16,9 @@ class AttractionViewController: UIViewController {
 
     
     var dataAttractionSlide = AttractionBannerSlide.dataAttractionBanner
+    
     var dataAttraction: AttractionModel?
+    
     private var autoScrollTimer: Timer?
     private var currentCellIndex: Int = 0
     
@@ -49,6 +51,7 @@ class AttractionViewController: UIViewController {
                 let jsonDecoder = JSONDecoder()
                 jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
                 dataAttraction = try jsonDecoder.decode(AttractionModel.self, from: jsonData)
+                print(dataAttraction)
             } catch {
                 
             }

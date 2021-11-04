@@ -683,7 +683,7 @@
                             <constraint firstItem="424-OI-cDc" firstAttribute="bottom" secondItem="2G8-uF-8nG" secondAttribute="bottom" id="rak-4F-46h"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Attractions" id="0y2-h8-naM"/>
+                    <navigationItem key="navigationItem" title="Attractions" largeTitleDisplayMode="always" id="0y2-h8-naM"/>
                     <connections>
                         <outlet property="collectionView" destination="8cT-p7-nzS" id="VOm-ah-QI4"/>
                         <outlet property="tableView" destination="2G8-uF-8nG" id="g98-2N-FRZ"/>

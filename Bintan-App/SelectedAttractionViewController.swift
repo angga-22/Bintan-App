@@ -15,6 +15,7 @@ class SelectedAttractionViewController: UIViewController {
     @IBOutlet weak var routeButton: UIButton!
     
     var dataSelectedAttraction: AttractionDetails?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

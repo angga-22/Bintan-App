@@ -14,6 +14,7 @@ class AttractionTableViewCell: UITableViewCell {
     
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    
     var index: Int?
     var seeAllAttractionClicked: SeeAllClosure?
     var selectedAttractionClosure: SelectedAttractionClosure?

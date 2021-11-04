@@ -13,7 +13,7 @@ import SwiftyJSON
 class WeatherVC: UIViewController,FloatingPanelControllerDelegate {
 
     let currentDate = Date()
-    
+
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var informationContainerRight: UIView!
     @IBOutlet weak var informationContainerCenter: UIView!

@@ -10,6 +10,7 @@ import UIKit
 class AttractionListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
     var attractionList : Attraction?
     
 

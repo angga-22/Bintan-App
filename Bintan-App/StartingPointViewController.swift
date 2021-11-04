@@ -45,9 +45,7 @@ class StartingPointViewController: UIViewController, UITextFieldDelegate {
             
         }
         
-        
         return true
-        
     }
     
 
